@@ -145,7 +145,7 @@ MIT License - feel free to use this project for educational purposes.
 
 ## Author
 
-**Developed by:** Your Name / Your Team
+**Developed by:** Shivam Shah
 **Last Updated:** March 2026
 
 ---
