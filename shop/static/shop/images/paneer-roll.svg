@@ -1,0 +1,18 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="url(#bg)"/>
+  <path d="M278 355L220 169C300 121 380 117 458 158L517 344C440 385 360 388 278 355Z" fill="#F1C67D"/>
+  <path d="M280 356C365 390 446 387 519 343" stroke="#9B5E2E" stroke-width="10" stroke-linecap="round"/>
+  <path d="M259 229C318 205 370 205 418 218C451 227 478 244 505 271" stroke="#D75633" stroke-width="20" stroke-linecap="round"/>
+  <path d="M253 254C309 231 360 230 406 241C449 251 476 266 500 291" stroke="#72A857" stroke-width="16" stroke-linecap="round"/>
+  <path d="M248 278C313 256 372 256 427 272C459 281 487 295 508 315" stroke="#F3DD7B" stroke-width="14" stroke-linecap="round"/>
+  <path d="M225 168C301 123 380 116 458 158L471 192C393 149 314 157 236 201L225 168Z" fill="#E2B062"/>
+  <path d="M194 102H606" stroke="#FFF3D8" stroke-width="16" stroke-linecap="round" opacity="0.45"/>
+  <text x="52" y="450" fill="#FFF8ED" font-size="56" font-family="Trebuchet MS, sans-serif" font-weight="700">Paneer Roll</text>
+  <text x="54" y="488" fill="#F8ECD4" font-size="24" font-family="Trebuchet MS, sans-serif">Soft wrap packed with paneer and fresh salad</text>
+  <defs>
+    <linearGradient id="bg" x1="66" y1="44" x2="725" y2="474" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B64E23"/>
+      <stop offset="1" stop-color="#5C2115"/>
+    </linearGradient>
+  </defs>
+</svg>

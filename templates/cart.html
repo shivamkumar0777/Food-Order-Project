@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="layout-two">
+        <div class="panel cart-items">
+            <h2>Your Cart</h2>
+            {% if items %}
+                {% for item in items %}
+                    <article class="cart-item">
+                        <div class="cart-row">
+                            <div>
+                                <h3>{{ item.food.name }}</h3>
+                                <p class="item-meta">Rs. {{ item.food.price }} each</p>
+                            </div>
+                            <strong>Rs. {{ item.total_price }}</strong>
+                        </div>
+                        <div class="quantity-actions">
+                            <span class="muted">Quantity: {{ item.quantity }}</span>
+                            <form method="post" action="{% url 'update_cart' item.id 'decrease' %}">
+                                {% csrf_token %}
+                                <button class="tiny-button pill" type="submit">-</button>
+                            </form>
+                            <form method="post" action="{% url 'update_cart' item.id 'increase' %}">
+                                {% csrf_token %}
+                                <button class="tiny-button pill" type="submit">+</button>
+                            </form>
+                            <form method="post" action="{% url 'update_cart' item.id 'remove' %}">
+                                {% csrf_token %}
+                                <button class="tiny-button pill" type="submit">Remove</button>
+                            </form>
+                        </div>
+                    </article>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <h3>Your cart is empty</h3>
+                    <p class="muted">Pick something delicious from the menu to get started.</p>
+                    <a class="button-link primary" href="{% url 'home' %}">Back to Menu</a>
+                </div>
+            {% endif %}
+        </div>
+
+        <aside class="panel summary-card">
+            <h2>Bill Summary</h2>
+            <div class="summary-list">
+                <div class="summary-line">
+                    <span class="muted">Items</span>
+                    <strong>{{ cart_count }}</strong>
+                </div>
+                <div class="summary-line summary-total">
+                    <span>Total</span>
+                    <span>Rs. {{ total }}</span>
+                </div>
+            </div>
+            <a class="button-link primary" href="{% url 'checkout' %}">Proceed to Checkout</a>
+        </aside>
+    </section>
+{% endblock %}

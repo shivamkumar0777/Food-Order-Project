@@ -1,0 +1,21 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="url(#bg)"/>
+  <ellipse cx="400" cy="285" rx="194" ry="74" fill="#C16637"/>
+  <ellipse cx="400" cy="252" rx="172" ry="74" fill="#F2E0BE"/>
+  <path d="M272 258C298 222 333 298 360 258C387 218 421 295 446 257C471 219 506 292 531 255" stroke="#F7F1E2" stroke-width="18" stroke-linecap="round"/>
+  <path d="M258 286C286 252 318 322 348 286C378 250 411 319 442 284C473 249 506 318 539 283" stroke="#FFF7E8" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="296" cy="221" r="12" fill="#F0C85B"/>
+  <circle cx="510" cy="221" r="12" fill="#F0C85B"/>
+  <circle cx="403" cy="212" r="12" fill="#F0C85B"/>
+  <circle cx="450" cy="302" r="12" fill="#7AA85E"/>
+  <circle cx="348" cy="303" r="12" fill="#7AA85E"/>
+  <path d="M210 100H590" stroke="#FDF2E2" stroke-width="16" stroke-linecap="round" opacity="0.45"/>
+  <text x="52" y="450" fill="#FFF8ED" font-size="56" font-family="Trebuchet MS, sans-serif" font-weight="700">White Sauce Pasta</text>
+  <text x="54" y="488" fill="#F4EADB" font-size="24" font-family="Trebuchet MS, sans-serif">Creamy pasta bowl with herbs and sweet corn</text>
+  <defs>
+    <linearGradient id="bg" x1="72" y1="42" x2="726" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5A24E"/>
+      <stop offset="1" stop-color="#855425"/>
+    </linearGradient>
+  </defs>
+</svg>

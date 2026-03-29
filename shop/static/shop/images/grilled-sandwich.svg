@@ -1,0 +1,19 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="url(#bg)"/>
+  <path d="M238 309L344 144L512 252L406 418L238 309Z" fill="#F0C177"/>
+  <path d="M298 298L392 153L462 199L368 344L298 298Z" fill="#E5722C"/>
+  <path d="M334 281L377 214L464 271L421 338L334 281Z" fill="#72A857"/>
+  <path d="M302 132L410 65L574 236L458 292L302 132Z" fill="#F7D59B"/>
+  <path d="M330 150L408 102L531 230L471 257L330 150Z" fill="#E8B86C"/>
+  <path d="M238 309L344 144L512 252L406 418L238 309Z" stroke="#A35A25" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M302 132L410 65L574 236L458 292L302 132Z" stroke="#A35A25" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M194 101H606" stroke="#FFF3D8" stroke-width="16" stroke-linecap="round" opacity="0.45"/>
+  <text x="52" y="450" fill="#FFF8ED" font-size="56" font-family="Trebuchet MS, sans-serif" font-weight="700">Grilled Sandwich</text>
+  <text x="54" y="488" fill="#F9ECD2" font-size="24" font-family="Trebuchet MS, sans-serif">Toasted triangles with cheese and vegetables</text>
+  <defs>
+    <linearGradient id="bg" x1="68" y1="42" x2="724" y2="476" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F29A3F"/>
+      <stop offset="1" stop-color="#A64E19"/>
+    </linearGradient>
+  </defs>
+</svg>

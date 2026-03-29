@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="hero">
+        <div class="hero-copy">
+            <h2>Order your favorite food in a few clicks.</h2>
+            <p class="muted">Browse the menu, add items to your cart, place an order, and manage food items from the site itself without any password.</p>
+        </div>
+        <form class="search-bar" method="get">
+            <input type="text" name="q" value="{{ query }}" placeholder="Search pizza, burger, sandwich...">
+            <button type="submit">Search Food</button>
+        </form>
+    </section>
+
+    {% if foods %}
+        <section class="grid">
+            {% for food in foods %}
+                <article class="panel food-card">
+                    <img class="food-image" src="{{ food.image }}" alt="{{ food.name }}">
+                    <div class="food-content">
+                        <div class="price-row">
+                            <h3>{{ food.name }}</h3>
+                            <span class="price-tag">Rs. {{ food.price }}</span>
+                        </div>
+                        <p class="muted">{{ food.description|default:"A tasty menu item ready for quick delivery." }}</p>
+                        <form method="post" action="{% url 'add_to_cart' food.id %}">
+                            {% csrf_token %}
+                            <button type="submit">Add to Cart</button>
+                        </form>
+                    </div>
+                </article>
+            {% endfor %}
+        </section>
+    {% else %}
+        <section class="panel empty-state">
+            <h2>No food found</h2>
+            <p class="muted">Try a different search term or add menu items from the Manage Food page.</p>
+        </section>
+    {% endif %}
+{% endblock %}

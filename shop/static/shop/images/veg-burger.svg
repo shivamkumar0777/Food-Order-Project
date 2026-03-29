@@ -1,0 +1,22 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="url(#bg)"/>
+  <ellipse cx="400" cy="185" rx="180" ry="78" fill="#F6C76D"/>
+  <path d="M220 215H580C566 263 536 292 493 308H307C264 292 234 263 220 215Z" fill="#4B2A1E"/>
+  <rect x="244" y="203" width="312" height="20" rx="10" fill="#78B857"/>
+  <rect x="250" y="230" width="300" height="16" rx="8" fill="#F3D96A"/>
+  <rect x="234" y="248" width="332" height="22" rx="11" fill="#D3543A"/>
+  <path d="M230 270H570C558 323 524 352 476 368H324C276 352 242 323 230 270Z" fill="#F0B55A"/>
+  <circle cx="325" cy="164" r="7" fill="#FFF3D0"/>
+  <circle cx="368" cy="146" r="7" fill="#FFF3D0"/>
+  <circle cx="416" cy="168" r="7" fill="#FFF3D0"/>
+  <circle cx="462" cy="148" r="7" fill="#FFF3D0"/>
+  <path d="M208 103H592" stroke="#FFF2C5" stroke-width="16" stroke-linecap="round" opacity="0.45"/>
+  <text x="52" y="450" fill="#FFF8ED" font-size="56" font-family="Trebuchet MS, sans-serif" font-weight="700">Veg Burger</text>
+  <text x="54" y="488" fill="#F6F2D6" font-size="24" font-family="Trebuchet MS, sans-serif">Loaded bun with crispy patty and lettuce</text>
+  <defs>
+    <linearGradient id="bg" x1="70" y1="40" x2="730" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9F5E1B"/>
+      <stop offset="1" stop-color="#4C2711"/>
+    </linearGradient>
+  </defs>
+</svg>

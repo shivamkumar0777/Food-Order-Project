@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="layout-two">
+        <div class="panel checkout-form">
+            <h2>Checkout</h2>
+            <p class="muted">Enter delivery details and confirm your order.</p>
+
+            <form class="form-grid" method="post">
+                {% csrf_token %}
+
+                <div class="field-group">
+                    <label for="{{ form.customer_name.id_for_label }}">Customer Name</label>
+                    {{ form.customer_name }}
+                    {{ form.customer_name.errors }}
+                </div>
+
+                <div class="field-group">
+                    <label for="{{ form.phone_number.id_for_label }}">Phone Number</label>
+                    {{ form.phone_number }}
+                    {{ form.phone_number.errors }}
+                </div>
+
+                <div class="field-group">
+                    <label for="{{ form.address.id_for_label }}">Address</label>
+                    {{ form.address }}
+                    {{ form.address.errors }}
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+
+        <aside class="panel summary-card">
+            <h2>Order Summary</h2>
+            <div class="summary-list">
+                {% for item in items %}
+                    <div class="summary-line">
+                        <span>{{ item.food.name }} x {{ item.quantity }}</span>
+                        <strong>Rs. {{ item.total_price }}</strong>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="summary-line summary-total">
+                <span>Total to Pay</span>
+                <span>Rs. {{ total }}</span>
+            </div>
+        </aside>
+    </section>
+{% endblock %}

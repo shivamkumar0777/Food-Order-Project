@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section class="layout-two">
+        <div class="panel checkout-form">
+            <h2>Manage Food</h2>
+            <p class="muted">Add menu items directly from this page. No admin account or password is required. You can use a full web image URL or one of the local project images.</p>
+
+            <form class="form-grid" method="post">
+                {% csrf_token %}
+
+                <div class="field-group">
+                    <label for="{{ form.name.id_for_label }}">Food Name</label>
+                    {{ form.name }}
+                    {{ form.name.errors }}
+                </div>
+
+                <div class="field-group">
+                    <label for="{{ form.description.id_for_label }}">Description</label>
+                    {{ form.description }}
+                    {{ form.description.errors }}
+                </div>
+
+                <div class="field-group">
+                    <label for="{{ form.price.id_for_label }}">Price</label>
+                    {{ form.price }}
+                    {{ form.price.errors }}
+                </div>
+
+                <div class="field-group">
+                    <label for="{{ form.image.id_for_label }}">Image URL or Path</label>
+                    {{ form.image }}
+                    {{ form.image.errors }}
+                </div>
+
+                <button type="submit">Add Food Item</button>
+            </form>
+        </div>
+
+        <aside class="panel summary-card">
+            <h2>Current Menu</h2>
+            {% if foods %}
+                <div class="summary-list">
+                    {% for food in foods %}
+                        <div class="summary-line">
+                            <span>{{ food.name }}</span>
+                            <strong>Rs. {{ food.price }}</strong>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <p class="muted">No menu items yet. Add your first item from the form.</p>
+            {% endif %}
+        </aside>
+    </section>
+{% endblock %}

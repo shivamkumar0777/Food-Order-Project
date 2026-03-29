@@ -1,0 +1,23 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="36" fill="url(#bg)"/>
+  <circle cx="400" cy="255" r="178" fill="#F8D27A"/>
+  <circle cx="400" cy="255" r="158" fill="#E86E3C"/>
+  <circle cx="400" cy="255" r="138" fill="#F3C76D"/>
+  <circle cx="329" cy="196" r="20" fill="#D9323A"/>
+  <circle cx="469" cy="191" r="20" fill="#D9323A"/>
+  <circle cx="328" cy="309" r="20" fill="#D9323A"/>
+  <circle cx="470" cy="314" r="20" fill="#D9323A"/>
+  <circle cx="401" cy="255" r="20" fill="#D9323A"/>
+  <path d="M361 167C378 181 379 199 366 219C393 210 418 211 444 221C430 197 429 179 446 165C417 173 389 173 361 167Z" fill="#4E9B53"/>
+  <path d="M277 250C294 264 295 282 282 301C309 292 334 293 360 303C346 279 345 261 362 247C333 255 305 255 277 250Z" fill="#4E9B53"/>
+  <path d="M438 249C455 263 456 281 443 300C470 291 495 292 521 302C507 278 506 260 523 246C494 254 466 254 438 249Z" fill="#4E9B53"/>
+  <path d="M210 100H590" stroke="#FFF4D8" stroke-width="16" stroke-linecap="round" opacity="0.5"/>
+  <text x="52" y="450" fill="#FFF8ED" font-size="56" font-family="Trebuchet MS, sans-serif" font-weight="700">Margherita Pizza</text>
+  <text x="54" y="488" fill="#FFE9D3" font-size="24" font-family="Trebuchet MS, sans-serif">Classic cheese pizza with basil and tomato</text>
+  <defs>
+    <linearGradient id="bg" x1="60" y1="50" x2="735" y2="470" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C8452A"/>
+      <stop offset="1" stop-color="#7C2315"/>
+    </linearGradient>
+  </defs>
+</svg>
